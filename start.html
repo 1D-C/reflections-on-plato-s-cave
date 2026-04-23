@@ -4,7 +4,6 @@
   <title>Dreamers</title>
   <link rel="stylesheet" href="main-style.css">
 
-
   <style>
     body {
       background-image: url('background-loop.gif');
@@ -20,7 +19,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 15px; /* space between button and text */
+      gap: 15px;
     }
 
     #demo {
@@ -46,6 +45,7 @@
 
   <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
 </head>
+
 <body>
 
 <h1>WELCOME TO YOUR DREAMs or .... nightmares</h1>
@@ -53,11 +53,14 @@
 <div class="container">
   <button onclick="typeWriter()">hey there</button>
   <p id="demo"></p>
+
+  <!-- FIXED BUTTON -->
+  <button onclick="location.href='story/intro.html'">BEgIn</button>
 </div>
 
 <script>
 var i = 0;
-var txt = 'Find yourself in a world where it's all jumbled';
+var txt = "Find yourself in a world where it's all jumbled";
 var speed = 50;
 var typing = false;
 
@@ -75,14 +78,15 @@ function typeWriter() {
       setTimeout(type, speed);
     } else {
       typing = false;
+
+      // optional: stop cursor blinking after typing
+      document.getElementById("demo").style.borderRight = "none";
     }
   }
 
   type();
 }
 </script>
-<button onclick="location.href='story/intro.html'"> bEGiN</button>
-<button>BEgIn</button>
-</a>
+
 </body>
 </html>
