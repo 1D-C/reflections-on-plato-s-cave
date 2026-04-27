@@ -1,0 +1,87 @@
+<html>
+<head>
+  <title>Dreamers</title>
+
+  <style>
+    body {
+      background-image: url('background-loop.gif');
+      background-size: cover;
+      color: white;
+      font-family: "Courier New", monospace;
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    /* Container to stack button + text */
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px; /* space between button and text */
+    }
+
+    #demo {
+      border-right: 3px solid white;
+      padding-right: 5px;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: blink 0.7s step-end infinite;
+    }
+
+
+
+    button {
+      padding: 10px 20px;
+      background: black;
+      color: white;
+      border: 1px solid white;
+      cursor: pointer;
+    }
+  </style>
+
+  <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
+</head>
+
+<body>
+
+<h1>WELCOME TO YOUR DREAMs or .... nightmares</h1>
+
+<div class="container">
+  <button onclick="typeWriter()">hey there</button>
+  <p id="demo"></p>
+</div>
+
+<script>
+var i = 0;
+var txt = 'Find yourself in a world where its all jumbled';
+var speed = 50;
+var typing = false;
+
+function typeWriter() {
+  if (typing) return;
+
+  typing = true;
+  i = 0;
+  document.getElementById("demo").innerHTML = "";
+
+  function type() {
+    if (i < txt.length) {
+      document.getElementById("demo").innerHTML += txt.charAt(i);
+      i++;
+      setTimeout(type, speed);
+    } else {
+      typing = false;
+    }
+  }
+
+  type();
+}
+</script>
+  <br>
+  <br>
+  <a href="intro.html" target="_self>
+  <button>Press START</button>
+</a>
+
+</body>
+</html>
