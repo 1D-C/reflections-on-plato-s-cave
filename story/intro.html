@@ -3,37 +3,20 @@
   <title>Dreamers</title>
 
   <style>
-    body {
-      margin: 0;
-      background-color: black;
-    }
-
-    /* Container to hold image like a background */
-    .map-container {
-      position: relative;
-      width: 100vw;
-      height: 100vh;
-      overflow: hidden;
-    }
-
-    /* Make image behave like background */
-    .map-container img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover; /* makes it act like background-size: cover */
-    }
-  </style>
+     </style>
 </head>
 
 <body>
 
-<div class="map-container">
-  <img src="Screenshot 2026-04-14 145431.png">
-</div>
+<img src="Screenshot 2026-04-14 145431.png" usemap="#image-map">
 
+<map name="image-map">
+    <area target="_self" alt="Birb" title="Birb" href="story/birb.html" coords="325,103,328,82,336,58,347,53,361,47,387,53,400,61,407,76,406,97,409,114,391,117,367,116,346,110" shape="poly">
+    <area target="_self" alt="Tail??" title="Tail??" href="story/cat-tail.html" coords="607,357,600,340,587,331,588,308,599,292,611,297,615,307,606,301,601,306,606,315,617,332,618,351,611,353" shape="poly">
+    <area target="_self" alt="Mysterious hole" title="Mysterious hole" href="story/Mysterious hole.html" coords="843,477,861,485,899,484,915,477,911,452,883,434,842,442,824,455" shape="poly">
+    <area target="_self" alt="Oh look the sun" title="Oh look the sun" href="story/oh look the sun.html" coords="82,59,83" shape="circle">
+    <area target="_self" alt="Sign" title="Sign" href="story/sign.html" coords="26,342,60,329,57,306,101,325,71,379,62,356,56,359,71,455,56,461,45,363,27,369" shape="poly">
+</map>
 
 </body>
 </html>
