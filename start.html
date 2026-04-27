@@ -1,87 +1,68 @@
+<!DOCTYPE html>
 <html>
 <head>
-  <title>Dreamers</title>
+  <title>My first web page</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 
   <style>
     body {
-      background-image: url('background-loop.gif');
-      background-size: cover;
-      color: white;
-      font-family: "Courier New", monospace;
-      text-align: center;
-      margin-top: 100px;
+      cursor: url('jellyfish-cursor-peaceful.png'), pointer;
+      background-image: url('images/immortal jellyfish.png');
+      font-family: Arial, sans-serif;
     }
 
-    /* Container to stack button + text */
-    .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 15px; /* space between button and text */
+    a:link { color: yellow; }
+    a:visited { color: white; }
+    a:hover {
+      color: orange;
+      cursor: url('jellyfish-cursor-hover.png'), pointer;
     }
+    a:active { color: green; }
 
-    #demo {
-      border-right: 3px solid white;
-      padding-right: 5px;
-      white-space: nowrap;
-      overflow: hidden;
-      animation: blink 0.7s step-end infinite;
-    }
-
-
-
-    button {
-      padding: 10px 20px;
-      background: black;
-      color: white;
-      border: 1px solid white;
-      cursor: pointer;
+    img {
+      float: left;
+      border: none;
     }
   </style>
-
-  <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
 </head>
 
 <body>
 
-<h1>WELCOME TO YOUR DREAMs or .... nightmares</h1>
+<h1>Darian Carrillo</h1>
 
-<div class="container">
-  <button onclick="typeWriter()">hey there</button>
-  <p id="demo"></p>
+<img src="images/IMG_5262.jpg" alt="Headshot" width="360" height="400">
+
+<div>
+  <p style="color: #f5f5f5">
+    <strong>Darian Carrillo</strong><br>
+    I'm a sophomore majoring in emerging media. I have strong crafting skills and have made crochet works like blankets, scarves, and charms.
+    I love making small cute things—even ran a business for it in high school.
+  </p>
 </div>
 
-<script>
-var i = 0;
-var txt = 'Find yourself in a world where its all jumbled';
-var speed = 50;
-var typing = false;
+<h2>The Reflections</h2>
+<ul>
+  <li><a href="Plato reflection.html">Go to Plato reflection</a></li>
+  <li><a href="ai slop.html">Go to AI slop reflection</a></li>
+</ul>
 
-function typeWriter() {
-  if (typing) return;
+<h2>Pictures & stuff</h2>
+<ul>
+  <li><a href="weeks/picture1.html">Go to Picture one</a></li>
+  <li><a href="weeks/picture2.html">Go to Picture two</a></li>
+  <li><a href="week3 pics.html">week 3 pictures</a></li>
+  <li><a href="week3 pic2.html">week 3 depths of blur</a></li>
+  <li><a href="weeks/collage.html">collage</a></li>
+  <li><a href="weeks/gif.html">animations</a></li>
+  <li><a href="weeks/week 6.html">An eye & backgrounds</a></li>
+</ul>
 
-  typing = true;
-  i = 0;
-  document.getElementById("demo").innerHTML = "";
+<img src="images/pop cat.gif" alt="pop cat" width="60" height="80">
 
-  function type() {
-    if (i < txt.length) {
-      document.getElementById("demo").innerHTML += txt.charAt(i);
-      i++;
-      setTimeout(type, speed);
-    } else {
-      typing = false;
-    }
-  }
-
-  type();
-}
-</script>
-  <br>
-  <br>
-  <a href="intro.html" target="_self>
-  <button>Press START</button>
-</a>
+<h2>Little works in progress</h2>
+<ul>
+  <li><a href="https://1d-c.github.io/Dreamers/">Dreamers</a></li>
+</ul>
 
 </body>
 </html>
