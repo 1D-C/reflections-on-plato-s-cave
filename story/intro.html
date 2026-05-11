@@ -11,10 +11,18 @@
       margin-top: 100px;
     }
 
-   img {
-      width: 1000px;
-      height: 400px;
-    }
+  <img src="images/start-scene.png"
+     usemap="#image-map"
+     alt="Starting scene"
+     width="600">
+
+<script src="https://cdn.jsdelivr.net/npm/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
+
+<script>
+  window.onload = function () {
+    imageMapResize();
+  };
+</script>
   </style>
 </head>
 
