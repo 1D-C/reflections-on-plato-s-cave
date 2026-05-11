@@ -11,18 +11,10 @@
       margin-top: 100px;
     }
 
-  <img src="images/start-scene.png"
-     usemap="#image-map"
-     alt="Starting scene"
-     width="600">
-
-<script src="https://cdn.jsdelivr.net/npm/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
-
-<script>
-  window.onload = function () {
-    imageMapResize();
-  };
-</script>
+    img {
+      width: 600px;
+      height: auto;
+    }
   </style>
 </head>
 
@@ -43,6 +35,7 @@
      alt="Starting scene">
 
 <map name="image-map">
+
     <area alt="oh look the sun"
           title="oh look the sun"
           href="story/oh-look-the-sun.html"
@@ -72,12 +65,15 @@
           href="story/sign.html"
           coords="28,437,52,433,68,547,82,542,67,427,76,422,82,453,120,387,67,356,71,391,28,412"
           shape="poly">
+
 </map>
 
 <script src="https://cdn.jsdelivr.net/npm/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
 
 <script>
-  imageMapResize();
+  window.onload = function () {
+    imageMapResize();
+  };
 </script>
 
 </body>
