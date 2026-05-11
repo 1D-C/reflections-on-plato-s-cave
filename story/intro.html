@@ -3,28 +3,74 @@
   <title>Dreamers</title>
 
   <style>
-    body {background-color: black;
-         font-family: "Courier New", monospace;
-          color: white;
+    body {
+      background-color: black;
+      font-family: "Courier New", monospace;
+      color: white;
       text-align: center;
-      margin-top: 100px;}
+      margin-top: 100px;
+    }
 
-     </style>
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
 </head>
 
 <body>
-<p>Huh thats weird wasn't I somewhere else? 
- <br> <br><br>oh well... 
-  <br><br><br>guess i should look around?</p>
-  <br>
-<img src="images/start-scene.png" usemap="#image-map">
+
+<p>
+  Huh thats weird wasn't I somewhere else?
+  <br><br><br>
+  oh well...
+  <br><br><br>
+  guess i should look around?
+</p>
+
+<br>
+
+<img src="images/start-scene.png"
+     usemap="#image-map"
+     alt="Starting scene">
 
 <map name="image-map">
-    <area target="" alt="oh look the sun" title="oh look the sun" href="story/oh look the sun.html" coords="82,54,144" shape="circle">
-    <area target="" alt="mysterious hole" title="mysterious hole" href="story/Mysterious hole.html" coords="1036,521,1064,517,1078,526,1101,542,1097,562,1067,577,1037,579,1007,567,991,554,995,533,1008,520" shape="poly">
-    <area target="" alt="tail?" title="tail?" href="story/cat-tail.html" coords="732,357,719,346,702,358,702,386,719,403,725,427,732,426,740,404,737,390,724,370,726,359" shape="poly">
-    <area target="" alt="birb?" title="birb?" href="story/birb.html" coords="363,109,384,154,440,168,494,150,510,112,457,56,415,58,392,107" shape="poly">
-    <area target="" alt="sign" title="sign" href="story/sign.html" coords="28,437,52,433,68,547,82,542,67,427,76,422,82,453,120,387,67,356,71,391,28,412" shape="poly">
+    <area alt="oh look the sun"
+          title="oh look the sun"
+          href="story/oh-look-the-sun.html"
+          coords="82,54,144"
+          shape="circle">
+
+    <area alt="mysterious hole"
+          title="mysterious hole"
+          href="story/mysterious-hole.html"
+          coords="1036,521,1064,517,1078,526,1101,542,1097,562,1067,577,1037,579,1007,567,991,554,995,533,1008,520"
+          shape="poly">
+
+    <area alt="tail?"
+          title="tail?"
+          href="story/cat-tail.html"
+          coords="732,357,719,346,702,358,702,386,719,403,725,427,732,426,740,404,737,390,724,370,726,359"
+          shape="poly">
+
+    <area alt="birb?"
+          title="birb?"
+          href="story/birb.html"
+          coords="363,109,384,154,440,168,494,150,510,112,457,56,415,58,392,107"
+          shape="poly">
+
+    <area alt="sign"
+          title="sign"
+          href="story/sign.html"
+          coords="28,437,52,433,68,547,82,542,67,427,76,422,82,453,120,387,67,356,71,391,28,412"
+          shape="poly">
 </map>
+
+<script src="https://cdn.jsdelivr.net/npm/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
+
+<script>
+  imageMapResize();
+</script>
+
 </body>
 </html>
